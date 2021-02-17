@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <meta charset="UTF-8">
+    <title>Main Form</title>
+</head>
+<body>
+<h1>Create Article</h1>
+<form action="/" method="post">
+    {% csrf_token %}
+
+    <ul>
+        <li>
+            <label>Fist number:</label>
+            <input type="number" name="fist_number"/>
+        </li>
+        <li>
+            <label>Second number:</label>
+            <input type="number" name="second_number"/>
+        </li>
+        <li>
+            <label>Add:</label>
+            <input type="radio" name="button" value="add"/>
+        </li>
+        <li>
+            <label>Subtract:</label>
+            <input type="radio" name="button" value="subtract"/>
+        </li>
+        <li>
+            <label>Multiply:</label>
+            <input type="radio" name="button" value="multiply"/>
+        </li>
+        <li>
+            <label>Divide:</label>
+            <input type="radio" name="button" value="divide"/>
+        </li>
+    </ul>
+            <input type="submit" value="Calculate"/>
+
+</form>
+</body>
+</html>
