@@ -1,0 +1,1 @@
+# python_group_7_homework_42_Dmitriy_Amelin
